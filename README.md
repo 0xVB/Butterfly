@@ -25,11 +25,10 @@ The local variable `ButterflySpace` is going to be used accross the documentatio
 ## Different Butterfly Libraries <a name = "loadstring"></a>
 Butterfly consists of multiple libraries that work together in a network of interactions. It is critical to know what these libraries are and what they do.
 # Butterfly Libraries
-| ButterflyUI   | The main library and the one you will be using the most. It handles the creation of all UI elements.|
-| ButterflyEnum | A|
-| Syntax      | Description |
+
+| Library | Description |
 | ----------- | ----------- |
-| Header      | Title       |
+| ButterflyUI | The main library and the one you will be using the most. It handles the creation of all UI elements |
 | Paragraph   | Text        |
 ## Creating Objects <a name = "create_obj"></a>
 In order to create objects using the library, we simply use the `Create` function located directly in the UI sub-library.
