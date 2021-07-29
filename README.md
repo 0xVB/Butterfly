@@ -1,6 +1,6 @@
 # Butterfly
-<p align="center">
-  # Butterfly UI
+# <p align="center">
+  Butterfly UI
   An **Advanced** Roblox User Interface Library
 </p>
 
