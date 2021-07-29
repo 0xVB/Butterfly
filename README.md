@@ -1,5 +1,5 @@
 # Butterfly
-# <p align="center">
+<p align="center">
   Butterfly UI
   An **Advanced** Roblox User Interface Library
 </p>
