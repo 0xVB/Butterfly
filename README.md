@@ -1,7 +1,7 @@
 # Butterfly
 <p align="center">
   Butterfly UI
-  An **Advanced** Roblox User Interface Library
+  An <b>Advanced</b> Roblox User Interface Library
 </p>
 
 Butterfly UI, formerly known as **Veranium**, is an advanced, yet simple UIL for Roblox made by V B. It functions very similarly to the native Roblox UI elements, unlike most other UILs. This makes it very easy to pick up, however, it is a large library, and, while it is easy to pick up, it is exceptionally difficult to master.
