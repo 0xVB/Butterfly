@@ -27,7 +27,10 @@ Butterfly consists of multiple libraries that work together in a network of inte
 # Butterfly Libraries
 | ButterflyUI   | The main library and the one you will be using the most. It handles the creation of all UI elements.|
 | ButterflyEnum | A|
-
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
 ## Creating Objects <a name = "create_obj"></a>
 In order to create objects using the library, we simply use the `Create` function located directly in the UI sub-library.
 ```lua
