@@ -36,5 +36,5 @@ Butterfly consists of multiple libraries that work together in a network of inte
 ## Creating Objects <a name = "create_obj"></a>
 In order to create objects using the library, we simply use the `Create` function located directly in the UI sub-library.
 ```lua
-ButterflySpace.ButterflyUI.Create([string] ClassName(, [BaseInstance] Parent));
+ButterflySpace.ButterflyUI.Create([string] ClassName, ([BaseInstance] Parent));
 ```
