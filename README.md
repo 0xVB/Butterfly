@@ -43,7 +43,8 @@ local Object = ButterflySpace.ButterflyUI.Create([string] ClassName, ([BaseInsta
 This is the function we will be using the most.
 
 ## Creating Objects <a name = "vtypes"></a>
-If you're wondering what a "BaseInstance" as mentioned in the codeblock above is, it essentially refers to *either* a native Roblox Instance, *or* a Butterfly Instance. This means that you can parent some objetcs to native Roblox Instances or other Butterfly Instances.
+If you're wondering what a "BaseInstance" as mentioned in the codeblock above is, it is a value type that will be used in Butterfly to refer to something new. Here is a list of all value types in Butterfly.
 | Value Type | Description |
 | ---------- | ----------- |
-| ButterflyUI | The main library and the one you will be using the most. It handles the creation of all UI elements |
+| BaseInstance | An inclusive value type that includes *both* native Roblox Instances *and* Butterfly Instances. In the previous codeblock, it basically means you can parent your objects to *either* a native Roblox Instance, or another Butterfly Instance. |
+| BaseNumber | a |
