@@ -13,6 +13,7 @@ If looking at examples isn't your thing, keep reading for the Butterfly UI Docum
 - [Loadstring](#loadstring)
 - [Different Butterfly Libraries](#libraries)
 - [Creating Objects](#create_obj)
+- [Types You Need To Understand](#vtypes)
 - [All Butterfly UI Classes](#bui_classes)
 
 ## Loadstring <a name = "loadstring"></a>
@@ -33,8 +34,16 @@ Butterfly consists of multiple libraries that work together in a network of inte
 | ButterflyEnum | A library that contains all the custom Enumerator values used by Butterfly. It stores special value types that can't be expressed using numbers, strings, etc. |
 | ButterflyDefaults | Contains default values and colors. It defines what the colors and specifications the objects created by ButterflyUI will be on creation. It could be used to easily make themes and reduce the amount of changes each UI element requires. |
 | ButterflyEvents **(CORE)** | A core library used internally by Butterfly to create custom events. For some reason, Roblox BindableEvents do not allow transferring custom proxies (userdata values) through the event parameters, which is why this library exists. |
+| 
 ## Creating Objects <a name = "create_obj"></a>
 In order to create objects using the library, we simply use the `Create` function located directly in the UI sub-library.
 ```lua
-ButterflySpace.ButterflyUI.Create([string] ClassName, ([BaseInstance] Parent));
+local Object = ButterflySpace.ButterflyUI.Create([string] ClassName, ([BaseInstance] Parent));
 ```
+This is the function we will be using the most.
+
+## Creating Objects <a name = "vtypes"></a>
+If you're wondering what a "BaseInstance" as mentioned in the codeblock above is, it essentially refers to *either* a native Roblox Instance, *or* a Butterfly Instance. This means that you can parent some objetcs to native Roblox Instances or other Butterfly Instances.
+| Value Type | Description |
+| ---------- | ---------- |
+| ButterflyUI | The main library and the one you will be using the most. It handles the creation of all UI elements |
