@@ -45,5 +45,5 @@ This is the function we will be using the most.
 ## Creating Objects <a name = "vtypes"></a>
 If you're wondering what a "BaseInstance" as mentioned in the codeblock above is, it essentially refers to *either* a native Roblox Instance, *or* a Butterfly Instance. This means that you can parent some objetcs to native Roblox Instances or other Butterfly Instances.
 | Value Type | Description |
-| ---------- | ---------- |
+| ---------- | ----------- |
 | ButterflyUI | The main library and the one you will be using the most. It handles the creation of all UI elements |
