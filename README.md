@@ -34,7 +34,7 @@ Butterfly consists of multiple libraries that work together in a network of inte
 | ButterflyEnum | A library that contains all the custom Enumerator values used by Butterfly. It stores special value types that can't be expressed using numbers, strings, etc. |
 | ButterflyDefaults | Contains default values and colors. It defines what the colors and specifications the objects created by ButterflyUI will be on creation. It could be used to easily make themes and reduce the amount of changes each UI element requires. |
 | ButterflyEvents **(CORE)** | A core library used internally by Butterfly to create custom events. For some reason, Roblox BindableEvents do not allow transferring custom proxies (userdata values) through the event parameters, which is why this library exists. |
-| 
+
 ## Creating Objects <a name = "create_obj"></a>
 In order to create objects using the library, we simply use the `Create` function located directly in the UI sub-library.
 ```lua
@@ -54,6 +54,10 @@ Different Classes deal with different value types in a different manner, so make
 
 ## All Butterfly UI Classes <a name = "bui_classes"></a>
 In order to make a user interface using Butterfly UI, you have to know the different classes separately. First, let's know what are the ClassTypes.
-| a | b |
+| Class Type | Description |
 | - | - |
-| c | d |
+| BaseClass | A collection of Attributes (Methods and Properties) that does **NOT** have a constructor. It cannot be created, and can only be inherited by other classes. |
+| CoreClass | A class that has a constructor, but cannot be created through the regular `Create` function. This is usually because these classes require more parameters than the standard classes, and are not used by the average user. They are used by standard classes as sub-components of them. |
+| StandardClass | Classes that have a constructor, and can be created by the regular `Create` function. They are the classes that most users will need. |
+
+
