@@ -40,11 +40,20 @@ In order to create objects using the library, we simply use the `Create` functio
 ```lua
 local Object = ButterflySpace.ButterflyUI.Create([string] ClassName, ([BaseInstance] Parent));
 ```
-This is the function we will be using the most.
+This is the function we will be using the most. The `Parent` parameter is optional.
 
 ## Creating Objects <a name = "vtypes"></a>
 If you're wondering what a "BaseInstance" as mentioned in the codeblock above is, it is a value type that will be used in Butterfly to refer to something new. Here is a list of all value types in Butterfly.
 | Value Type | Description |
 | ---------- | ----------- |
 | BaseInstance | An inclusive value type that includes *both* native Roblox Instances *and* Butterfly Instances. In the previous codeblock, it basically means you can parent your objects to *either* a native Roblox Instance, or another Butterfly Instance. |
-| BaseNumber | a |
+| BaseNumber | An inclusive value type that includes Numbers, NumberRanges, and NumberSequences. It could be used for properties like a CheckBox's Transparency, whereas the Transparency is the first value in the set, and as the CheckBox is Checked by the user, it tweens to the last value in the set. This also works with values in-between the first and last in NumberSequences. |
+| BaseColor | An inclusive value type that includes Color3 and ColorSequence. Much like BaseNumber, it could be used in a similar way, but of course, referring to colors instead of numbers. (Ex: CheckBox's Color before and after checking.) |
+
+Different Classes deal with different value types in a different manner, so make sure to know how a property deals with being set to a number, as opposed to a range or a sequence. It should be documented in the Class' document page.
+
+## All Butterfly UI Classes <a name = "bui_classes"></a>
+In order to make a user interface using Butterfly UI, you have to know the different classes separately. First, let's know what are the ClassTypes.
+| a | b |
+| - | - |
+| c | d |
