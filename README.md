@@ -60,4 +60,40 @@ In order to make a user interface using Butterfly UI, you have to know the diffe
 | CoreClass | A class that has a constructor, but cannot be created through the regular `Create` function. This is usually because these classes require more parameters than the standard classes, and are not used by the average user. They are used by standard classes as sub-components of them. |
 | StandardClass | Classes that have a constructor, and can be created by the regular `Create` function. They are the classes that most users will need. |
 
+Now that we know the ClassTypes, let's get into the documentation by class.
 
+## Standard Classes
+- [Frame](/Documentation/StandardClasses/Frame.md)
+- [Label](/Documentation/StandardClasses/Label.md)
+- [Button](/Documentation/StandardClasses/Button.md)
+- [TextBox](/Documentation/StandardClasses/TextBox.md)
+- [Slider](/Documentation/StandardClasses/Slider.md)
+- [ScrollBar](/Documentation/StandardClasses/ScrollBar.md)
+- [ScrollingFrame](/Documentation/StandardClasses/ScrollingFrame.md)
+- [CheckBox](/Documentation/StandardClasses/CheckBox.md)
+- [AnimatedCheckBox](/Documentation/StandardClasses/AnimatedCheckBox.md)
+- [Counter](/Documentation/StandardClasses/Counter.md)
+- [Expander](/Documentation/StandardClasses/Expander.md)
+- [DropDownBox](/Documentation/StandardClasses/DropDownBox.md)
+- [ListBox](/Documentation/StandardClasses/ListBox.md)
+
+## Base Classes
+- [BaseInstance](/Documentation/BaseClasses/BaseInstance.md)
+- [Base2D](/Documentation/BaseClasses/Base2D.md)
+- [UIObject](/Documentation/BaseClasses/UIObject.md)
+- [RedrawObject](/Documentation/BaseClasses/RedrawObject.md)
+- [BackgroundObject](/Documentation/BaseClasses/BackgroundObject.md)
+- [InputAttributes](/Documentation/BaseClasses/InputAttributes.md)
+- [SizeManagement](/Documentation/BaseClasses/SizeManagement.md)
+- [AppearanceManagement](/Documentation/BaseClasses/AppearanceManagement.md)
+- [IntervalAttribute](/Documentation/BaseClasses/IntervalAttribute.md)
+
+## Core Classes
+- [SliceFragment](/Documentation/CoreClasses/SliceFragment.md)
+- [Background](/Documentation/CoreClasses/Background.md)
+- [TextRender](/Documentation/CoreClasses/TextRender.md)
+- [ImageRender](/Documentation/CoreClasses/ImageRender.md)
+- [TextBoxRender](/Documentation/CoreClasses/TextBoxRender.md)
+- [Bar](/Documentation/CoreClasses/Bar.md)
+
+Click on a class to see its in-depth documentation. It is recommended to start with Standard Classes, then move on to Base and Core Classes **if needed**.
