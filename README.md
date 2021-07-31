@@ -76,6 +76,7 @@ Now that we know the ClassTypes, let's get into the documentation by class.
 - [Expander](/Documentation/StandardClasses/Expander.md)
 - [DropDownBox](/Documentation/StandardClasses/DropDownBox.md)
 - [ListBox](/Documentation/StandardClasses/ListBox.md)
+- [GifPlayer](/Documentation/GifPlayer/ListBox.md)
 
 ## Base Classes
 - [BaseInstance](/Documentation/BaseClasses/BaseInstance.md)
