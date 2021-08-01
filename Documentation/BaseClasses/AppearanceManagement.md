@@ -6,7 +6,7 @@
 | -------- | ------------------- | ---- | ----------- |
 | Color | BaseColor | Read & Write | A felxible color property that could hold Color3 values or ColorSequences. |
 | Transparency | BaseNumber | Read & Write | A flexible transparency property that could hold Numbers, NumberRanges, or NumberSequences. |
-| IntervalAttribute | Number | Read Only | A number between 0-1 that determines which color/transparency of the range/sequence will the inherited object display. |
+| Interval | Number | Read Only | A number between 0-1 that determines which color/transparency of the range/sequence will the inherited object display. |
 
 ## Methods
 
