@@ -1,6 +1,6 @@
-## BaseInstance
+# BaseInstance
 
-# Properties
+## Properties
 
 | Property | Expected Value Type | Mode | Description |
 | -------- | ------------------- | ---- | ----------- |
@@ -10,13 +10,13 @@
 | Name | String | Read & Write | Contains the name of the inherited object. |
 | ParentLocked | Read Only **(CORE)** | If set to true, the `Parent` property becomes Read Only. This is a core property that can only be modified by Butterfly UI internally. |
 
-# Methods
+## Methods
 
 | Method | Parameters | Description |
 | ------ | ---------- | ----------- |
 | Destroy | N/A | Removes all internal references to the inherited object and destroys the Roblox elements that display it. Make sure to clear the variable that references the object after usage to ensure garbage collection. |
 
-# Events
+## Events
 
 | Event | Parameters | Description |
 | ----- | ---------- | ----------- |
