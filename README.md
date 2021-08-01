@@ -15,6 +15,8 @@ If looking at examples isn't your thing, keep reading for the Butterfly UI Docum
 - [Creating Objects](#create_obj)
 - [Types You Need To Understand](#vtypes)
 - [All Butterfly UI Classes](#bui_classes)
+- [Butterfly Enumerators](/Documentation/Enums.md)
+- [Butterfly Defaults](/Documentation/Defaults.md)
 
 ## Loadstring <a name = "loadstring"></a>
 In order to get started, we have to load Butterfly UI into our script. This could be done by using a loadstring for exploits or by using the code in the [Source](/Source/ButterflyUI.lua), putting it into a ModuleScript, and then requiring that ModuleScript. It is **NOT** recommended to require the module more than once; Butterfly UI is a heavy library, and loading it more than once is not optimal. Try managing all the UI from one central client-sided script.
