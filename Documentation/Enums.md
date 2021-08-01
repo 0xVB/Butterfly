@@ -4,8 +4,8 @@ The ButterflyEnum Library contains special values cannot be represented using si
 
 ## Table Of Contents
 - [List Of ButterflyEnums](#benums)
-- **CORE: ** [ButterflyEnum Meta Structure](#mtstruct)
-- **CORE: ** [How To Create Your Own Enums](#htcreate)
+- <b>CORE</b>: [ButterflyEnum Meta Structure](#mtstruct)
+- <b>CORE: </b> [How To Create Your Own Enums](#htcreate)
 
 ## List Of ButterflyEnums <a name = "benums"></a>
 - [CornerType](#cornertype)
