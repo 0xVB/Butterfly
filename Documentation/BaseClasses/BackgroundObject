@@ -4,7 +4,7 @@
 
 | Property | Expected Value Type | Mode | Description |
 | -------- | ------------------- | ---- | ----------- |
-| Background | Butterfly Instance [Background](/Documentation/StandardClasses/Background.md) | Read Only | Contains the Butterfly Background of the inherited object. |
+| Background | Butterfly Instance | Read Only | Contains the Butterfly Background of the inherited object. |
 
 ## Methods
 
