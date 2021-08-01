@@ -3,7 +3,7 @@
 # Properties
 
 | Property | Expected Value Type | Mode | Description |
-| -------- | ------------------- | ----------- |
+| -------- | ------------------- | ---- | ----------- |
 | Parent | BaseInstance | Read & Write | Sets or gets the parent for the inherited object. It could be provided with a Roblox instance or a Butterfly UI instance. |
 | Class | ButterflyClass | Read Only | A property that contains the direct class the inherited object belongs to. This refers to the actual class, not a string that resembles its name. |
 | ClassName | String | Read Only | Contains the name of the class the inherited object belongs to. |
