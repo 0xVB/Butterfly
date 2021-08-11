@@ -1,6 +1,6 @@
 # Butterfly
 <p align="center">
-  <img src="https://raw.githubusercontent.com/0xVB/Butterfly/main/ButterflyUILbl.png" alt="Butterfly UI"></a></br>
+  <img src="https://raw.githubusercontent.com/0xVB/Butterfly/main/ButterflyUIBanner.png" alt="Butterfly UI"></a></br>
   An <b>Advanced</b> Roblox User Interface Library
 </p>
 
