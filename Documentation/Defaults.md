@@ -10,6 +10,5 @@ The Butterfly Defaults Library contains an array of default values that the main
 
 
 ## All Defaults <a name = "defvals"></a>
-- Background
--- a
-- 
+* Background
+- a
