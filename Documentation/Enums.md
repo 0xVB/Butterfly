@@ -8,7 +8,12 @@ The ButterflyEnum Library contains special values cannot be represented using si
 - <b>CORE: </b> [How To Create Your Own Enums](#htcreate)
 
 ## List Of ButterflyEnums <a name = "benums"></a>
-- [CornerType](#cornertype)
+- [CornerType]
+
+### CornerType Values
+| Name | Shape |
+| ---- | ----- |
+| Round | |
 
 ## ButterflyEnum Meta Structure <a name = "mtstruct"></a>
 
