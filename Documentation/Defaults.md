@@ -13,4 +13,4 @@ The Butterfly Defaults Library contains an array of default values that the main
 * Background | Contains a list of defaults used when creating background for Butterfly Instances.
   - Color | The default `Background.Color` value.
   - Transparency | The default `Background.Transparency` value.
-  - CornerType | The default `Background.CornerType` value. A list of all the CornerTypes could be found [here](/Documentation/Enums.md).
+  - CornerType | The default `Background.CornerType` value. A list of all the CornerTypes could be found [here](/Documentation/Enums.md#cornertype).
