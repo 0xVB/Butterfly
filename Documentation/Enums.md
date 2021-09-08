@@ -11,10 +11,11 @@ The ButterflyEnum Library contains special values cannot be represented using si
 - [CornerType]
 
 ### CornerType Values <a name = "cornertype"></a>
-All CornerTypes shown in the preview below have the `CornerSize` property set to 25(px). The total image size is 200x100px, so do not take this for a standard look. For example, a Background with the CornerType `Round` could look like a perfect circle if the `CornerSize` property was set to half of its actual size, as demonstrated here:
+All CornerTypes shown in the preview table below have the `CornerSize` property set to 25(px). The total image size is 200x100px, so do not take this for a standard look. For example, a Background with the CornerType `Round` could look like a perfect circle if the `CornerSize` property was set to half of its actual size, as demonstrated here:
 
 <img src="https://raw.githubusercontent.com/0xVB/Butterfly/main/Documentation/ImageAssets/RoundDemonstration.gif">
 
+#### Preview Table:
 | Name | Shape |
 | ---- | ----- |
 | Sharp | <img src="https://raw.githubusercontent.com/0xVB/Butterfly/main/Documentation/ImageAssets/SharpCT.png"> |
