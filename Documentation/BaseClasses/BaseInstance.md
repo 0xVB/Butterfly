@@ -8,7 +8,7 @@
 | Class | ButterflyClass | Read Only | A property that contains the direct class the inherited object belongs to. This refers to the actual class, not a string that resembles its name. |
 | ClassName | String | Read Only | Contains the name of the class the inherited object belongs to. |
 | Name | String | Read & Write | Contains the name of the inherited object. |
-| ParentLocked | Read Only **(CORE)** | If set to true, the `Parent` property becomes Read Only. This is a core property that can only be modified by Butterfly UI internally. |
+| ParentLocked | Boolean | Read Only **(CORE)** | If set to true, the `Parent` property becomes Read Only. This is a core property that can only be modified by Butterfly UI internally. |
 
 ## Methods
 
