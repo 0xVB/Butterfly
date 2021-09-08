@@ -10,7 +10,7 @@ The ButterflyEnum Library contains special values cannot be represented using si
 ## List Of ButterflyEnums <a name = "benums"></a>
 - [CornerType]
 
-### CornerType Values
+### CornerType Values <a name = "cornertype"></a>
 | Name | Shape |
 | ---- | ----- |
 | Round | |
