@@ -5,8 +5,9 @@ The Butterfly Defaults Library contains an array of default values that the main
 ## Table Of Contents
 - [All Defaults](#defvals)
 - [ImprintingEnabled](#imprint)
-- <b>CORE: </b> [Defaults Meta Structure](#metastruct)
 - <b>CORE: </b> [Creating Your Own Defaults (Themes)](#themes)
+- <b>CORE: </b> [Defaults' Meta Structure](#metastruct)
+
 
 
 ## All Defaults <a name = "defvals"></a>
@@ -62,3 +63,35 @@ In the defaults library, there is one attribute that is not a default or a defau
 When `ImprintingEnabled` is set to `true`, Butterfly will start using the defaults themselves to assign them to their respective attributes when new instances are created. This might seem incredibly complicated, but it is quite simple. An easy analogy to understand that, is through Roblox's `ValuePlaceholder` instances, which look like this: 
 
 <img src="https://raw.githubusercontent.com/0xVB/Butterfly/main/Documentation/ImageAssets/ValuePHold.png" alt="ValuePlaceholder"></a></br>
+As you can see, the instance is simply a shell. It hold a number value, and has no other purpose. It just has a `Value` property that could be set. Now, imagine if you have multiple scripts in your workspace and you want them all to share one number value. When the value is changed, it is changed for all the scripts. This is the exact use for value placeholders in Roblox.
+
+Defaults function very similarly. You can think of the default itself as the value placeholder that simply holds a value. When `ImprintingEnabeld` is `true`, Butterfly will set the attributes to the default **itself**. When it is `false`, Butterfly will set the attributes to the **value** of the default, not the default itself.
+
+In other words, in a normal case scenario, if you create a Butterfly instance called "X", and then change the defaults, and make another one called "Y", if `ImprintingEnabled` is `false`, X will have the old defaults and Y will have the new defaults. If `ImprintingEnabled` is true, both X **and** Y will have the new defaults.
+
+If you wish to stop imprinting on one instance without having to go through its every attribute, you can do that by using the `DisableImprinting` method, which will set all the attributes to their default values. If you wish to turn it on for one instance, you can use the `EnableImprinting` method, which will set all of the attributes to the defaults.
+`DisableImprinting` and `EnableImprinting` both work regardless of what `ImprintingEnabled` is set to.
+
+## Creating Your Own Defaults <a name = "themes"></a>
+
+Now that you know how imprinting works, you might want to make your own defaults. Doing so will make you have more control over your themes, and you will have to set them only once. This is helpful because you do not have to recreate the UI in order for the theme changes to apply. In order to create a default, you use the function `ButterflySpace.Core.Constructors.Defaults`. The function takes 4 parameters:
+1. `String` Name
+2. `Default (NULLABLE)` Parent
+3. `Any` Value
+4. `String` TypeLock
+
+In case you are creating a new default library, the parent could be `nil`, in which case it will be subsituted with `ButterflySpace.Defaults`. You also cannot need to provide a Value or a TypeLock if it is a library. The name is what determines how the default will be reached. For instance, if you provided `"Konrushi"` for the name, and the `nil` for the parent, you will be able to access the default through `ButterfySpace.ButterflyDefaults.Konrushi`. `Value` could be anything, however it has to be consistent with the `TypeLock`. The `TypeLock` will determine what values does this default accept. If you do not know how TypeLock strings are formed, you can use the [TypeLock](/Documentation/TypeLock.md) documentation.
+
+After creating your defaults, you will have to set them to attributes. Keep in mind that the TypeLock has to be either the exact same, or stricter than that of the attribute you are trying to set the default to. Imagine an attribute that could be either a boolean or nil; if you set it to a default that could **only** be a boolean, that would work. However, if you set it to a default that could be either a number or nil, it will cause an error.
+
+If you want to set the attributes automatically every time an instance is created, you can do that by using the following code: `ButterflySpace.ButterflyUI.Classes["SAMPLE_CLASS"]["SAMPLE_ATTRIBUTE"]:SetDefault(SAMPLE_DEFAULT)`. In this code, "SAMPLE_CLASS" is replaced with the class you want to change. Assume you wanted to change the default TextColor of a Button to the Konrushi default we made above. The code would be as follows: `ButterflySpace.ButterflyUI.Classes.Button.TextColor:SetDefault(ButterfySpace.ButterflyDefaults.Konrushi)`
+
+## Defaults' Meta Structure <a name = "metastruct"></a>
+
+| Index | ValueType | Value | Description |
+| - | - | - | - |
+| "\0" | `String` | Name | - |
+| "\1" | `Default (NULLABLE)` | Parent | The default library that contains this default. It is nil when the default in question is `ButterflySpace.ButterflyDefaults`. |
+| "\2" | `Any (NULLABLE)` | Value | The value of the default. |
+| "\3" | `String` | TypeLock | The TypeLock string. |
+| "\4" | `Table` | Children/SubDefaults | A table containing all the children or sub-defaults in this default. |
