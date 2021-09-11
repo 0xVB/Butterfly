@@ -26,7 +26,7 @@ local ButterflySpace = loadstring(game:HttpGet("https://raw.githubusercontent.co
 ```
 The local variable `ButterflySpace` is going to be used accross the documentation to refer to the loaded library. Name it as you please, but keep that in mind.
 
-## Different Butterfly Libraries <a name = "loadstring"></a>
+## Different Butterfly Libraries <a name = "libraries"></a>
 Butterfly consists of multiple libraries that work together in a network of interactions. It is critical to know what these libraries are and what they do.
 **Keep in mind: You most likely won't be using any libraries marked as core libraries. They are *NOT* documented, so the only way to use them is to read the source code. Learning them would unlock certain features such as editing sub-components of UI elements, but it's not something an average user would realistically need.**
 # Butterfly Libraries
