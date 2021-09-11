@@ -84,7 +84,10 @@ In case you are creating a new default library, the parent could be `nil`, in wh
 
 After creating your defaults, you will have to set them to attributes. Keep in mind that the TypeLock has to be either the exact same, or stricter than that of the attribute you are trying to set the default to. Imagine an attribute that could be either a boolean or nil; if you set it to a default that could **only** be a boolean, that would work. However, if you set it to a default that could be either a number or nil, it will cause an error.
 
-If you want to set the attributes automatically every time an instance is created, you can do that by using the following code: `ButterflySpace.ButterflyUI.Classes["SAMPLE_CLASS"]["SAMPLE_ATTRIBUTE"]:SetDefault(SAMPLE_DEFAULT)`. In this code, "SAMPLE_CLASS" is replaced with the class you want to change. Assume you wanted to change the default TextColor of a Button to the Konrushi default we made above. The code would be as follows: `ButterflySpace.ButterflyUI.Classes.Button.TextColor:SetDefault(ButterfySpace.ButterflyDefaults.Konrushi)`
+If you want to set the attributes automatically every time an instance is created, you can do that by using the following code: ```lua
+ButterflySpace.ButterflyUI.Classes["SAMPLE_CLASS"]["SAMPLE_ATTRIBUTE"]:SetDefault(SAMPLE_DEFAULT)```
+In this code, "SAMPLE_CLASS" is replaced with the class you want to change. Assume you wanted to change the default TextColor of a Button to the Konrushi default we made above. The code would be as follows: ```lua
+ButterflySpace.ButterflyUI.Classes.Button.TextColor:SetDefault(ButterfySpace.ButterflyDefaults.Konrushi)```
 
 ## Defaults' Meta Structure <a name = "metastruct"></a>
 
