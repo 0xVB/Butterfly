@@ -11,6 +11,7 @@ The Butterfly Defaults Library contains an array of default values that the main
 
 ## All Defaults <a name = "defvals"></a>
 * `Background` | Contains a list of defaults used when creating a [`Background`](/Documentation/CoreClasses/Background.md) for Butterfly Instances.
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | Color | `Color3` | The default `Background.Color` value. |
