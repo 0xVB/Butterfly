@@ -54,3 +54,10 @@ The Butterfly Defaults Library contains an array of default values that the main
 | InactiveBackColor | `Color3` | This color will be used for **backgrounds** when interactive elements have the `Enabled` attribute set to `false`. |
 | HighlightColor | `Color3` | This color will be used for highlights such as a [Button's](/Documentation/StandardClasses/Button.md) `RippleColor` atrribute. |
 | HighlightBackColor | `Color3` | This color will be used for selectable elements such as the items in a  [DropDownBoxe](/Documentation/StandardClasses/DropDownBoxe.md). |
+
+## ImprintingEnabled <a name = "imprint"></a>
+
+In the defaults library, there is one attribute that is not a default or a default library, that is `ImprintingEnabled`. It is a boolean property that, by default, is set to `false`. It can be used to easily make themes and change them without having to re-create the UI. Despite their great use, they could also be confusing and cause unwanted changes to those who do not want to use it or create themes, hence why it is set to `false` by default.
+
+When `ImprintingEnabled` is set to `true`, Butterfly will start using the defaults themselves to assign them to their respective attributes when new instances are created. This might seem incredibly complicated, but it is quite simple. An easy analogy to understand that, is through Roblox's `ValuePlaceholder` instances, which look like this: 
+<img src="https://raw.githubusercontent.com/0xVB/Butterfly/main/Documentation/ImageAssets/ValuePHold.png" alt="ValuePlaceholder"></a></br>
