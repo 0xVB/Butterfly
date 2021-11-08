@@ -80,9 +80,12 @@ Now that you know how imprinting works, you might want to make your own defaults
 3. `Any` Value
 4. `String` TypeLock
 
-In case you are creating a new default library, the parent could be `nil`, in which case it will be subsituted with `ButterflySpace.Defaults`. You also cannot provide a Value or a TypeLock if it is a library. If any were provided, they will be ignored.
+In case you are creating a new default library, the `Parent` could be `nil`, in which case it will be subsituted with `ButterflySpace.Defaults`. You also cannot provide a Value or a TypeLock if it is a library. If any were provided, they will be ignored. If you are creating a regular default, (not a default library) the `Parent` given should either be `nil` or a default library. 
+
 `Name` is what determines how the default will be reached. For instance, if you provided `"Konrushi"` for the name, and the `nil` for the parent, you will be able to access the default through `ButterfySpace.ButterflyDefaults.Konrushi`.
+
 `Value` could be anything, however it has to be consistent with the `TypeLock`.
+
 The `TypeLock` will determine what values does this default accept. If you do not know how TypeLock strings are formed, you can use the [TypeLock](/Documentation/TypeLock.md) documentation.
 
 After creating your defaults, you will have to set them to attributes. Keep in mind that the TypeLock has to be either the exact same, or stricter than that of the attribute you are trying to set the default to. Imagine an attribute that could be either a boolean or nil; if you set it to a default that could **only** be a boolean, that would work. However, if you set it to a default that could be either a number or nil, it will cause an error.
