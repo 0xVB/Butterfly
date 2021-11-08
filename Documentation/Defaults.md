@@ -58,7 +58,7 @@ The Butterfly Defaults Library contains an array of default values that the main
 
 ## ImprintingEnabled <a name = "imprint"></a>
 
-In the defaults library, there is one attribute that is not a default or a default library, that is `ImprintingEnabled`. It is a boolean property that, by default, is set to `false`. It can be used to easily make themes and change them without having to re-create the UI. Despite their great use, they could also be confusing and cause unwanted changes to those who do not want to use it or create themes, hence why it is set to `false` by default.
+In the defaults library, there is one attribute that is not a default or a default library, which is `ImprintingEnabled`. It is a boolean property that, by default, is set to `false`. It can be used to easily make themes and change them without having to re-create the UI. Despite their great use, they could also be confusing and cause unwanted changes to those who do not want to use it or create themes, hence why it is set to `false` by default.
 
 When `ImprintingEnabled` is set to `true`, Butterfly will start using the defaults themselves to assign them to their respective attributes when new instances are created. This might seem incredibly complicated, but it is quite simple. An easy analogy to understand that, is through Roblox's `ValuePlaceholder` instances, which look like this: 
 
@@ -80,7 +80,7 @@ Now that you know how imprinting works, you might want to make your own defaults
 3. `Any` Value
 4. `String` TypeLock
 
-In case you are creating a new default library, the parent could be `nil`, in which case it will be subsituted with `ButterflySpace.Defaults`. You also cannot need to provide a Value or a TypeLock if it is a library. The name is what determines how the default will be reached. For instance, if you provided `"Konrushi"` for the name, and the `nil` for the parent, you will be able to access the default through `ButterfySpace.ButterflyDefaults.Konrushi`. `Value` could be anything, however it has to be consistent with the `TypeLock`. The `TypeLock` will determine what values does this default accept. If you do not know how TypeLock strings are formed, you can use the [TypeLock](/Documentation/TypeLock.md) documentation.
+In case you are creating a new default library, the parent could be `nil`, in which case it will be subsituted with `ButterflySpace.Defaults`. You also cannot provide a Value or a TypeLock if it is a library. If any were provided, they will be ignored. The name is what determines how the default will be reached. For instance, if you provided `"Konrushi"` for the name, and the `nil` for the parent, you will be able to access the default through `ButterfySpace.ButterflyDefaults.Konrushi`. `Value` could be anything, however it has to be consistent with the `TypeLock`. The `TypeLock` will determine what values does this default accept. If you do not know how TypeLock strings are formed, you can use the [TypeLock](/Documentation/TypeLock.md) documentation.
 
 After creating your defaults, you will have to set them to attributes. Keep in mind that the TypeLock has to be either the exact same, or stricter than that of the attribute you are trying to set the default to. Imagine an attribute that could be either a boolean or nil; if you set it to a default that could **only** be a boolean, that would work. However, if you set it to a default that could be either a number or nil, it will cause an error.
 
