@@ -1,4 +1,5 @@
 # RedrawObject
+A BaseClass inherited by ButterflyInstances that either redraw per heartbeat or have hybrid redrawing schedules.
 
 ## Properties
 

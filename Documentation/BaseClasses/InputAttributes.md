@@ -1,4 +1,5 @@
 # InputAttributes
+A BaseClass inherited by ButterflyInstances that accept user input.
 
 ## Properties
 

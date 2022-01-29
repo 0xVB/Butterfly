@@ -1,4 +1,5 @@
 # BaseInstance
+A BaseClass inherited by ButterflyInstances.
 
 ## Properties
 

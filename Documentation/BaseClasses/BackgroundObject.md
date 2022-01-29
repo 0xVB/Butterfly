@@ -1,4 +1,5 @@
 # BackgroundObject
+A BaseClass inherited by objects that contain a [Background](/Documentation/CoreClasses/Background.md) Instance.
 
 ## Properties
 

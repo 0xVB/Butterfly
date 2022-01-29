@@ -1,4 +1,5 @@
 # AppearanceManagement
+A BaseClass that manages the appearance of an object.
 
 ## Properties
 

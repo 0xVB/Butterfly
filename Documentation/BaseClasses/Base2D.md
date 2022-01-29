@@ -1,4 +1,5 @@
 # Base2D
+A BaseClass that contains the essential attributes of 2D Classes.
 
 ## Properties
 
