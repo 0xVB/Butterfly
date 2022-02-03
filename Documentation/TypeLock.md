@@ -22,8 +22,8 @@ The second byte represents the TypeCheck function. All the TypeCheck functions a
 | `\3` | BaseColor | No | Returns true if the given value is a `Color3` or a `ColorSequence`. |
 | `\4` | BEnum | Yes | Returns true if the given value is a ButterflyEnum that belongs to the library with the given parameter. |
 | `\5` | BaseInstance | No | Returns true if the given value is either a ButterflyInstance or a Roblox Instance. This is mainly used for the `Parent` attribute. |
-| `\5` | Type | Yes | Returns true if the given value's `type()` result matches the given parameter. |
-| `\6` | TypeOf | Yes | Returns true if the given value's `typeof()` result matches the given parameter. |
+| `\6` | Type | Yes | Returns true if the given value's `type()` result matches the given parameter. |
+| `\7` | TypeOf | Yes | Returns true if the given value's `typeof()` result matches the given parameter. |
 
 ## TypeString Examples <a name = "examples"></a>
 | TypeString | Explanation |
